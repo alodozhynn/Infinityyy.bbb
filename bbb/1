@@ -1,0 +1,67 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Infinity Big Blox 1.0 🜲", HidePremium = false, SaveConfig = true, ConfigFolder = "BigBloxHub"})
+
+-- Aba Teleportes
+local TeleportTab = Window:MakeTab({
+	Name = "Teleportes",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+OrionLib:MakeNotification({
+	Name = "Infinityyy.bbb 1.0",
+	Content = "Infinity Hub was loaded, Made by Alodozhynn + OpenAI",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+TeleportTab:AddButton({
+	Name = "Dentro da Pista",
+	Callback = function()
+      		local player = game.Players.LocalPlayer
+      		local character = player.Character or player.CharacterAdded:Wait()
+      		character:SetPrimaryPartCFrame(CFrame.new(-778, 52, 400))
+      		print("Teleported to Dentro da Pista")
+  	end    
+})
+
+TeleportTab:AddButton({
+	Name = "Dentro da Casa 22",
+	Callback = function()
+      		local player = game.Players.LocalPlayer
+      		local character = player.Character or player.CharacterAdded:Wait()
+      		character:SetPrimaryPartCFrame(CFrame.new(215, 30, -1573))
+      		print("Teleported to Dentro da Casa 22")
+  	end    
+})
+
+TeleportTab:AddButton({
+	Name = "Casa 18",
+	Callback = function()
+      		local player = game.Players.LocalPlayer
+      		local character = player.Character or player.CharacterAdded:Wait()
+      		character:SetPrimaryPartCFrame(CFrame.new(-875, 60, 324))
+      		print("Teleported to Casa 18")
+  	end    
+})
+
+-- Aba Provas
+local ProvasTab = Window:MakeTab({
+	Name = "Provas",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- Botão Prova de Matemática (Calculadora)
+ProvasTab:AddButton({
+	Name = "Prova de matemática (calculadora)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://rawscripts.net/raw/Calculator_229"))()
+      		print("Calculadora de Matemática carregada")
+  	end    
+})
+
+-- Label de Mais Funcionalidades
+ProvasTab:AddLabel("Mais funcionalidades em breve!")
+
+OrionLib:Init()
