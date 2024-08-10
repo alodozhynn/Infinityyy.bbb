@@ -1,0 +1,61 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Infinityyy bbb 2 ✆", HidePremium = false, SaveConfig = true, ConfigFolder = "BigBloxHub2"})
+
+-- Aba Teleportes + Animações
+local Tab = Window:MakeTab({
+	Name = "Teleportes + Animações",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+OrionLib:MakeNotification({
+	Name = "Infinityyy.bbb 2.0",
+	Content = "Infinity Hub 2.0 was loaded, Made by Alodozhynn + OpenAI",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+-- Botão para Teleporte para o Blox Fone
+Tab:AddButton({
+	Name = "Ir para o Blox Fone",
+	Callback = function()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		character:SetPrimaryPartCFrame(CFrame.new(573, 23, -70))
+		print("Teleported to Blox Fone")
+	end    
+})
+
+-- Botão para Teleporte para Animação de Saída
+Tab:AddButton({
+	Name = "Ir para Animação de Saída",
+	Callback = function()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		character:SetPrimaryPartCFrame(CFrame.new(515, 23, -183))
+		print("Teleported to Animação de Saída")
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Toggle 1",
+	Default = false,
+	Callback = function(Value)
+		print("Toggle 1 is now", Value)
+	end    
+})
+
+Tab:AddSlider({
+	Name = "Slider 1",
+	Min = 0,
+	Max = 100,
+	Default = 50,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Value",
+	Callback = function(Value)
+		print("Slider 1 value is", Value)
+	end    
+})
+
+OrionLib:Init()
