@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Infinity Big Blox 1.0 🜲", HidePremium = false, SaveConfig = true, ConfigFolder = "BigBloxHub", IntroText = <string>})
+local Window = OrionLib:MakeWindow({Name = "Infinity big blox 🜲", HidePremium = false, SaveConfig = true, ConfigFolder = "BigBloxHub"})
 
 -- Aba Teleportes
 local TeleportTab = Window:MakeTab({
@@ -10,9 +10,12 @@ local TeleportTab = Window:MakeTab({
 
 OrionLib:MakeNotification({
 	Name = "Infinityyy.bbb 1.0",
-	Content = "Made by Nightscript Studios",
-	Image = "rbxassetid://4483345998",
+	Content = "Made by Nightscript Studios!",
+	Image = "rbxassetid://8834748103",
 	Time = 5
+})
+local Section = TeleportTab:AddSection({
+	Name = "Teleportes no lobby"
 })
 
 TeleportTab:AddButton({
@@ -24,7 +27,9 @@ TeleportTab:AddButton({
       		print("Teleported to Dentro da Pista")
   	end    
 })
-
+local Section = TeleportTab:AddSection({
+	Name = "Dentro das casas"
+})
 TeleportTab:AddButton({
 	Name = "Dentro da Casa 22",
 	Callback = function()
@@ -36,7 +41,7 @@ TeleportTab:AddButton({
 })
 
 TeleportTab:AddButton({
-	Name = "Casa 18",
+	Name = "Dentro da Casa 18",
 	Callback = function()
       		local player = game.Players.LocalPlayer
       		local character = player.Character or player.CharacterAdded:Wait()
@@ -46,14 +51,14 @@ TeleportTab:AddButton({
 })
 
 -- Aba Provas
-local ProvasTab = Window:MakeTab({
+local proofsTab = Window:MakeTab({
 	Name = "Provas",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
 -- Botão Prova de Matemática (Calculadora)
-ProvasTab:AddButton({
+proofsTab:AddButton({
 	Name = "Prova de matemática (calculadora)",
 	Callback = function()
       		loadstring(game:HttpGet("https://rawscripts.net/raw/Calculator_229"))()
@@ -62,6 +67,11 @@ ProvasTab:AddButton({
 })
 
 -- Label de Mais Funcionalidades
-ProvasTab:AddLabel("Mais funcionalidades em breve!")
+proofsTab:AddLabel("Mais funcionalidades em breve!")
 
+local Tab = Window:MakeTab({
+	Name = "Tab 1",
+	Icon = "rbxassetid://8834748103",
+	PremiumOnly = false
+})
 OrionLib:Init()
