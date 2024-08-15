@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Infinity big blox 🜲", HidePremium = false, SaveConfig = true, ConfigFolder = "BigBloxHub"})
+local Window = OrionLib:MakeWindow({Name = "Infinity Big Blox 🜲", HidePremium = false, SaveConfig = true, ConfigFolder = "BigBloxHub"})
 
 -- Aba Teleportes
 local TeleportTab = Window:MakeTab({
@@ -69,9 +69,69 @@ proofsTab:AddButton({
 -- Label de Mais Funcionalidades
 proofsTab:AddLabel("Mais funcionalidades em breve!")
 
-local Tab = Window:MakeTab({
-	Name = "Tab 1",
+local hdTab = Window:MakeTab({
+	Name = "HD Admin Destroying",
 	Icon = "rbxassetid://8834748103",
 	PremiumOnly = false
+ hdTab:AddButton({
+	Name = "Made by Nightscript Studios",
+	Callback = function()
+      		print("button pressed")
+  	end    
+   hdTab:AddButton({
+	Name = "Made by Nightscript Studios",
+	Callback = function()
+      		print("button pressed")
+  	end    
+   hdTab:AddButton({
+	Name = "Made by Nightscript Studios",
+	Callback = function()
+      		print("button pressed")
+  	end    
+   hdTab:AddButton({
+	Name = "Made by Nightscript Studios",
+	Callback = function()
+      		print("button pressed")
+  	end    
+   hdTab:AddButton({
+	Name = "Made by Nightscript Studios",
+	Callback = function()
+      		print("button pressed")
+  	end    
+   hdTab:AddButton({
+	Name = "Made by Nightscript Studios",
+	Callback = function()
+      		print("button pressed")
+  	end    
+   hdTab:AddButton({
+	Name = "Made by Nightscript Studios",
+	Callback = function()
+      		print("button pressed")
+  	end    
+   hdTab:AddButton({
+	Name = "Made by Nightscript Studios",
+	Callback = function()
+      		print("button pressed")
+  	end    
+   hdTab:AddButton({
+	Name = "Made by Nightscript Studios",
+	Callback = function()
+      		print("button pressed")
+  	end    
+   hdTab:AddButton({
+	Name = "Made by Nightscript Studios",
+	Callback = function()
+      		print("button pressed")
+  	end    
+   hdTab:AddButton({
+	Name = "Made by Nightscript Studios",
+	Callback = function()
+      		print("button pressed")
+  	end    
+   hdTab:AddButton({
+	Name = "Made by Nightscript Studios",
+	Callback = function()
+      		print("button pressed")
+  	end    
 })
 OrionLib:Init()
