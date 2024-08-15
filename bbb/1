@@ -4,13 +4,13 @@ local Window = OrionLib:MakeWindow({Name = "Infinity Big Blox 1.0 🜲", HidePre
 -- Aba Teleportes
 local TeleportTab = Window:MakeTab({
 	Name = "Teleportes",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://7072719338",
 	PremiumOnly = false
 })
 
 OrionLib:MakeNotification({
 	Name = "Infinityyy.bbb 1.0",
-	Content = "Infinity Hub was loaded, Made by Alodozhynn + OpenAI",
+	Content = "Made by Nightscript Studios",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
